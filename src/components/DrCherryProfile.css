@@ -1,0 +1,161 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .dr-cherry-profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  .profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .profile-header h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .profile-header p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Main Content Styles */
+  .profile-content {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .left-column {
+    flex: 2;
+  }
+  
+  .right-column {
+    flex: 1;
+  }
+  
+  /* Clinic Info Styles */
+  .clinic-info {
+    margin-bottom: 40px;
+  }
+  
+  .clinic-info h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .clinic-info p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  /* About Dr Styles */
+  .about-dr h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .about-dr p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  /* Doctor Information Styles */
+  .doctor-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-info h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .info-section {
+    margin-bottom: 20px;
+  }
+  
+  .info-section h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .info-section p,
+  .info-section ul {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  .info-section ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .info-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* CTA Section Styles */
+  .cta-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .cta-button {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .cta-button:hover {
+    background-color: #16a085;
+  }
+  
+  .cta-section p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-content {
+      flex-direction: column;
+    }
+  
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
+  }
+
+
