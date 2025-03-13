@@ -28,7 +28,9 @@ const Index = () => {
         <div className="hero-content">
           <h2>Your Skin, Our Passion</h2>
           <p>Experience world-class dermatology and laser treatments in the heart of Delhi.</p>
-          <button className="cta-button">Book an Appointment</button>
+          <Link to="/ContactForm" style={{ textDecoration: "none" }}>
+    <button className="chat-button">Book an Appointment</button>
+  </Link>
         </div>
       </section>
 
@@ -36,10 +38,13 @@ const Index = () => {
       <section id="services" className="services">
         <h2>Our Services</h2>
         <div className="service-cards">
-          <div className="card">
-            <h3>Treatment of Skin, Hair and Nail Diseases</h3>
-            <p>Acne, Pigmentation, Eczema, Psoriasis, and more.</p>
-          </div>
+        <Link to="/treatmentgallery" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Treatment of Skin, Hair and Nail Diseases</h3>
+    <p>Acne, Pigmentation, Eczema, Psoriasis, and more.</p>
+  </div>
+</Link>
+
           <div className="card">
             <h3>Laser Hair Treatments</h3>
             <p>Hair Removal, Skin Resurfacing, Tattoo Removal, and more.</p>
@@ -141,10 +146,12 @@ const Index = () => {
 
       {/* Chat Section */}
       <section id="chat" className="chat">
-        <h2>Online Consultation</h2>
-        <p>Chat with our doctors for personalized advice.</p>
-        <button className="chat-button">Start Chat</button>
-      </section>
+  <h2>Online Consultation</h2>
+  <p>Chat with our doctors for personalized advice.</p>
+  <Link to="/ContactForm" style={{ textDecoration: "none" }}>
+    <button className="chat-button">Start Chat</button>
+  </Link>
+</section>
 
       {/* Footer Section */}
       <footer className="footer">
@@ -154,4 +161,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Index;  
