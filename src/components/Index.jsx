@@ -45,58 +45,82 @@ const Index = () => {
   </div>
 </Link>
 
-          <div className="card">
-            <h3>Laser Hair Treatments</h3>
-            <p>Hair Removal, Skin Resurfacing, Tattoo Removal, and more.</p>
-          </div>
-          <div className="card">
-            <h3>Treatment of STD's</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
-          <div className="card">
-            <h3>Radio Frequency Surgery</h3>
-            <p>Botox, Fillers, Chemical Peels, and more.</p>
-          </div>
+<Link to="/lasertreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Laser Hair Treatments</h3>
+    <p>Hair Removal, Skin Resurfacing, Tattoo Removal, and more.</p>
+  </div>
+</Link>
+
+<Link to="/stdtreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Treatment of STD's</h3>
+    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+  </div>
+</Link>
+
+<Link to="/aesthetictreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Radio Frequency Surgery</h3>
+    <p>Botox, Fillers, Chemical Peels, and more.</p>
+  </div>
+</Link>
+
+<Link to="/vitiligotreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
           <div className="card">
             <h3>Treatment of Vitiligo</h3>
             <p>Hair Fall, PRP, Hair Transplant, and more.</p>
           </div>
-          <div className="card">
-            <h3>Fractional Co2 Laser for Scars</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
-          <div className="card">
-            <h3>Q Switch ND YAG Laser</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
-          <div className="card">
-            <h3>Intense Pulse Light</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
-          <div className="card">
-            <h3>Microdermabrasion</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
-          <div className="card">
-            <h3>Chemical Peels</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
-          <div className="card">
-            <h3>Microneedling</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
-          <div className="card">
-            <h3>Profhilo</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
-          <div className="card">
-            <h3>Botox</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
-          <div className="card">
-            <h3>TPRP</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
+          </Link>
+          <Link to="/fractionalco2gallery" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Fractional Co2 Laser for Scars</h3>
+    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+  </div>
+</Link>
+
+<Link to="/qswitchndyaggallery" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Q Switch ND YAG Laser</h3>
+    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+  </div>
+</Link>
+
+<Link to="/ipltreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Intense Pulse Light</h3>
+    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+  </div>
+</Link>
+
+<Link to="/microdermabrasion" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Microdermabrasion</h3>
+    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+  </div>
+</Link>
+
+<Link to="/chemicalpeels" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Chemical Peels</h3>
+    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+  </div>
+</Link>
+
+<Link to="/microneedling" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Microneedling</h3>
+    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+  </div>
+</Link>
+
+<Link to="/pbt" style={{ textDecoration: "none", color: "black" }}>
+  <div className="card">
+    <h3>Profhilo, Botox & TPRP</h3>
+    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+  </div>
+</Link>
+
         </div>
       </section>
 

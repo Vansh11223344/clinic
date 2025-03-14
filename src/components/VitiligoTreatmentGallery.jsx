@@ -1,29 +1,35 @@
 import React from 'react';
-import './TreatmentGallery.css'; // Import the CSS file
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // For navigation
+import './VitiligoTreatmentGallery.css'; // Import the CSS file
 
-const TreatmentGallery = () => {
+const VitiligoTreatmentGallery = () => {
   const treatments = [
     {
-      condition: 'Acne',
+      condition: 'Vitiligo Treatment',
+      before: '/assets/vitiligo-before.jpg',
+      after: '/assets/vitiligo-after.jpg',
+      description: 'Advanced treatments to restore skin pigmentation and improve appearance.',
+    },
+    {
+      condition: 'Acne Treatment',
       before: '/assets/acne-before.jpg',
       after: '/assets/acne-after.jpg',
-      description: 'Effective treatment for acne, reducing inflammation and preventing scarring.',
+      description: 'Effective solutions to reduce acne and prevent scarring.',
     },
     {
-      condition: 'Pigmentation',
+      condition: 'Pigmentation Treatment',
       before: '/assets/pigmentation-before.jpg',
       after: '/assets/pigmentation-after.jpg',
-      description: 'Advanced laser treatments to reduce pigmentation and even out skin tone.',
+      description: 'Reduce pigmentation and achieve an even skin tone.',
     },
     {
-      condition: 'Eczema',
+      condition: 'Eczema Treatment',
       before: '/assets/eczema-before.jpg',
       after: '/assets/eczema-after.jpg',
       description: 'Personalized care to soothe eczema and restore skin health.',
     },
     {
-      condition: 'Psoriasis',
+      condition: 'Psoriasis Treatment',
       before: '/assets/psoriasis-before.jpg',
       after: '/assets/psoriasis-after.jpg',
       description: 'Targeted treatments to manage psoriasis and improve skin texture.',
@@ -31,11 +37,11 @@ const TreatmentGallery = () => {
   ];
 
   return (
-    <div className="treatment-gallery">
-          <nav className="navbar">
-                <Link to="/" className="home-link">Home</Link>
-              </nav>
-      <h2>Treatment of Skin, Hair, and Nail Diseases</h2>
+    <div className="vitiligo-treatment-gallery">
+      <nav className="navbar">
+        <Link to="/" className="home-link">Home</Link>
+      </nav>
+      <h2>Treatment of Vitiligo and Related Skin Conditions</h2>
       <div className="gallery-container">
         {treatments.map((treatment, index) => (
           <div key={index} className="treatment-card">
@@ -52,4 +58,4 @@ const TreatmentGallery = () => {
   );
 };
 
-export default TreatmentGallery;
+export default VitiligoTreatmentGallery;

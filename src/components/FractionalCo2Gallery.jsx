@@ -1,41 +1,41 @@
 import React from 'react';
-import './TreatmentGallery.css'; // Import the CSS file
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // For navigation
+import './FractionalCo2Gallery.css'; // Import the CSS file
 
-const TreatmentGallery = () => {
+const FractionalCo2Gallery = () => {
   const treatments = [
     {
-      condition: 'Acne',
-      before: '/assets/acne-before.jpg',
-      after: '/assets/acne-after.jpg',
-      description: 'Effective treatment for acne, reducing inflammation and preventing scarring.',
+      condition: 'Acne Scars',
+      before: '/assets/acne-scar-before.jpg',
+      after: '/assets/acne-scar-after.jpg',
+      description: 'Fractional CO2 laser treatment effectively reduces the appearance of acne scars.',
     },
     {
       condition: 'Pigmentation',
       before: '/assets/pigmentation-before.jpg',
       after: '/assets/pigmentation-after.jpg',
-      description: 'Advanced laser treatments to reduce pigmentation and even out skin tone.',
+      description: 'Achieve even skin tone by reducing pigmentation with Fractional CO2 laser.',
     },
     {
       condition: 'Eczema',
       before: '/assets/eczema-before.jpg',
       after: '/assets/eczema-after.jpg',
-      description: 'Personalized care to soothe eczema and restore skin health.',
+      description: 'Improve skin texture and reduce eczema-related scarring with advanced laser treatment.',
     },
     {
       condition: 'Psoriasis',
       before: '/assets/psoriasis-before.jpg',
       after: '/assets/psoriasis-after.jpg',
-      description: 'Targeted treatments to manage psoriasis and improve skin texture.',
+      description: 'Manage psoriasis and improve skin appearance with Fractional CO2 laser therapy.',
     },
   ];
 
   return (
-    <div className="treatment-gallery">
-          <nav className="navbar">
-                <Link to="/" className="home-link">Home</Link>
-              </nav>
-      <h2>Treatment of Skin, Hair, and Nail Diseases</h2>
+    <div className="fractional-co2-gallery">
+      <nav className="navbar">
+        <Link to="/" className="home-link">Home</Link>
+      </nav>
+      <h2>Fractional CO2 Laser for Scars</h2>
       <div className="gallery-container">
         {treatments.map((treatment, index) => (
           <div key={index} className="treatment-card">
@@ -52,4 +52,4 @@ const TreatmentGallery = () => {
   );
 };
 
-export default TreatmentGallery;
+export default FractionalCo2Gallery;

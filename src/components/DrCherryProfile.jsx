@@ -50,7 +50,9 @@ const DrCherryProfile = () => {
           </div>
 
           <div className="cta-section">
-            <button className="cta-button">Book an Appointment</button>
+           <Link to="/ContactForm">
+                     <button className="cta-button">Book an Appointment</button>
+                   </Link>
             <p>Consultation Fee: ₹ at clinic</p>
           </div>
         </div>
