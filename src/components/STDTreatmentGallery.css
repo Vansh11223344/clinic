@@ -1,6 +1,6 @@
 /* General Styles */
 .std-treatment-gallery {
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -42,11 +42,11 @@
   
   /* Treatment Card Styles */
   .treatment-card {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
+    width: 200px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -64,14 +64,14 @@
   /* Image Container Styles */
   .image-container {
     position: relative;
-    width: 100%;
+    width: 70%;
     height: 200px;
     overflow: hidden;
   }
   
   .image-container img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 90%;
     object-fit: cover;
     transition: opacity 0.5s ease;
   }
@@ -99,7 +99,7 @@
   .treatment-card p {
     font-size: 16px;
     color: #666;
-    padding: 0 20px 20px;
+    padding: 0 15px 15px;
     line-height: 1.6;
   }
   
@@ -110,6 +110,9 @@
     }
   
     .treatment-card {
-      width: 100%;
+      width: 80%;
     }
+    .image-container {
+      height: 80%;
+  }
   }
