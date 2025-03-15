@@ -6,20 +6,20 @@ const LaserTreatmentGallery = () => {
   const treatments = [
     {
       condition: 'Laser Hair Removal',
-      before: '/assets/hair-removal-before.jpg',
-      after: '/assets/hair-removal-after.jpg',
+      before: '/public/bearhair.png',
+      after: '/public/aearhair.png',
       description: 'Permanent hair reduction with advanced laser technology for smooth, hair-free skin.',
     },
     {
       condition: 'Laser Skin Resurfacing',
-      before: '/assets/skin-resurfacing-before.jpg',
-      after: '/assets/skin-resurfacing-after.jpg',
+      before: '/public/bcrowsfeet.png',
+      after: '/public/acrowsfeet.png',
       description: 'Restore your skin’s youthful glow by reducing wrinkles, scars, and blemishes.',
     },
     {
       condition: 'Laser Tattoo Removal',
-      before: '/assets/tattoo-removal-before.jpg',
-      after: '/assets/tattoo-removal-after.jpg',
+      before: '/public/btatto.png',
+      after: '/public/atatto.png',
       description: 'Safe and effective removal of unwanted tattoos with minimal scarring.',
     },
   ];

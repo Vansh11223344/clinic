@@ -4,28 +4,23 @@ import './STDTreatmentGallery.css'; // Import the CSS file
 
 const STDTreatmentGallery = () => {
   const treatments = [
-    {
-      condition: 'Treatment of STDs',
-      before: '/assets/std-before.jpg',
-      after: '/assets/std-after.jpg',
-      description: 'Comprehensive and confidential treatment for sexually transmitted diseases.',
-    },
+ 
     {
       condition: 'Hair Fall Treatment',
-      before: '/assets/hair-fall-before.jpg',
-      after: '/assets/hair-fall-after.jpg',
+      before: '/public/bhairfall.png',
+      after: '/public/ahairfall.png',
       description: 'Effective solutions to reduce hair fall and promote healthy hair growth.',
     },
     {
       condition: 'PRP Therapy',
-      before: '/assets/prp-before.jpg',
-      after: '/assets/prp-after.jpg',
+      before: '/public/bprp.png',
+      after: '/public/aprp.png',
       description: 'Platelet-rich plasma therapy for hair regrowth and skin rejuvenation.',
     },
     {
       condition: 'Hair Transplant',
-      before: '/assets/hair-transplant-before.jpg',
-      after: '/assets/hair-transplant-after.jpg',
+      before: '/public/btransplant.png',
+      after: '/public/atransplant.png',
       description: 'Advanced hair transplant techniques for natural-looking results.',
     },
   ];

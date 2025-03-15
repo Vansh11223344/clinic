@@ -7,7 +7,6 @@ import ContactForm from './components/ContactForm';
 import TreatmentGallery from './components/TreatmentGallery';
 import AestheticTreatmentGallery from './components/AestheticTreatmentGallery';
 import ChemicalPeels from './components/ChemicalPeels';
-import FractionalCo2Gallery from './components/FractionalCo2Gallery';
 import IPLTreatmentGallery from './components/IPLTreatmentGallery';
 import LaserTreatmentGallery from './components/LaserTreatmentGallery';
 import Microdermabrasion from './components/Microdermabrasion';
@@ -27,7 +26,6 @@ const App = () => {
         <Route path="/drcherryprofile" element={<DrCherryProfile />} />
         <Route path="/ContactForm" element={<ContactForm />} />
         <Route path="/treatmentgallery" element={<TreatmentGallery />} />
-        <Route path="/FractionalCo2Gallery" element={<FractionalCo2Gallery />} />
         <Route path="/IPLTreatmentGallery" element={<IPLTreatmentGallery />} />
         <Route path="/LaserTreatmentGallery" element={<LaserTreatmentGallery />} />
         <Route path="/Microdermabrasion" element={<Microdermabrasion />} />

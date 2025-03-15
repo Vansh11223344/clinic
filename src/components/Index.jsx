@@ -72,19 +72,13 @@ const Index = () => {
             <p>Hair Fall, PRP, Hair Transplant, and more.</p>
           </div>
           </Link>
-          <Link to="/fractionalco2gallery" style={{ textDecoration: "none", color: "black" }}>
-  <div className="card">
-    <h3>Fractional Co2 Laser for Scars</h3>
-    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-  </div>
-</Link>
 
-<Link to="/qswitchndyaggallery" style={{ textDecoration: "none", color: "black" }}>
+{/*<Link to="/qswitchndyaggallery" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
     <h3>Q Switch ND YAG Laser</h3>
     <p>Hair Fall, PRP, Hair Transplant, and more.</p>
   </div>
-</Link>
+</Link>*/}
 
 <Link to="/ipltreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
@@ -93,13 +87,8 @@ const Index = () => {
   </div>
 </Link>
 
-<Link to="/microdermabrasion" style={{ textDecoration: "none", color: "black" }}>
-  <div className="card">
-    <h3>Microdermabrasion</h3>
-    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-  </div>
-</Link>
 
+{/*}
 <Link to="/chemicalpeels" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
     <h3>Chemical Peels</h3>
@@ -119,7 +108,7 @@ const Index = () => {
     <h3>Profhilo, Botox & TPRP</h3>
     <p>Hair Fall, PRP, Hair Transplant, and more.</p>
   </div>
-</Link>
+</Link>*/}
 
         </div>
       </section>

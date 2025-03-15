@@ -276,7 +276,7 @@
   }
 
   .hero {
-    background-image: url('/src/assets/example.png'); 
+    background-image: url('/public/poster.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -287,7 +287,7 @@
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.747);
     padding: 30px;
     border-radius: 10px;
     text-align: center;

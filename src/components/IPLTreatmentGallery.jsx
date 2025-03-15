@@ -6,26 +6,26 @@ const IPLTreatmentGallery = () => {
   const treatments = [
     {
       condition: 'Acne',
-      before: '/assets/acne-before.jpg',
-      after: '/assets/acne-after.jpg',
+      before: '/public/bacne.png',
+      after: '/public/aacne.png',
       description: 'IPL effectively reduces acne and prevents future breakouts.',
     },
     {
       condition: 'Pigmentation',
-      before: '/assets/pigmentation-before.jpg',
-      after: '/assets/pigmentation-after.jpg',
+      before: '/public/bpigmentation.png',
+      after: '/public/apigmentation.png',
       description: 'Achieve even skin tone by reducing pigmentation with IPL.',
     },
     {
       condition: 'Eczema',
-      before: '/assets/eczema-before.jpg',
-      after: '/assets/eczema-after.jpg',
+      before: '/public/beczema.png',
+      after: '/public/aeczema.png',
       description: 'Improve skin texture and reduce eczema-related redness with IPL.',
     },
     {
       condition: 'Psoriasis',
-      before: '/assets/psoriasis-before.jpg',
-      after: '/assets/psoriasis-after.jpg',
+      before: '/public/bpsoriasis.png',
+      after: '/public/apsoriasis.png',
       description: 'Manage psoriasis and improve skin appearance with IPL therapy.',
     },
   ];

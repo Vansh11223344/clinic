@@ -6,17 +6,18 @@ const TreatmentGallery = () => {
   const treatments = [
     {
       condition: 'Acne',
-      before: '/assets/acne-before.jpg',
-      after: '/assets/acne-after.jpg',
+      before: '/public/bacne.png',
+      after: '/public/aacne.png',
       description: 'Effective treatment for acne, reducing inflammation and preventing scarring.',
     },
     {
       condition: 'Pigmentation',
-      before: '/assets/pigmentation-before.jpg',
-      after: '/assets/pigmentation-after.jpg',
+      before: '/public/bpigmentation.png',
+      after: '/public/apigmentation.png',
       description: 'Advanced laser treatments to reduce pigmentation and even out skin tone.',
     },
-    {
+  ];
+    {/*{
       condition: 'Eczema',
       before: '/assets/eczema-before.jpg',
       after: '/assets/eczema-after.jpg',
@@ -27,8 +28,8 @@ const TreatmentGallery = () => {
       before: '/assets/psoriasis-before.jpg',
       after: '/assets/psoriasis-after.jpg',
       description: 'Targeted treatments to manage psoriasis and improve skin texture.',
-    },
-  ];
+    },*/}
+  
 
   return (
     <div className="treatment-gallery">

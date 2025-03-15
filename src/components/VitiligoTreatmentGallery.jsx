@@ -4,34 +4,29 @@ import './VitiligoTreatmentGallery.css'; // Import the CSS file
 
 const VitiligoTreatmentGallery = () => {
   const treatments = [
-    {
-      condition: 'Vitiligo Treatment',
-      before: '/assets/vitiligo-before.jpg',
-      after: '/assets/vitiligo-after.jpg',
-      description: 'Advanced treatments to restore skin pigmentation and improve appearance.',
-    },
+   
     {
       condition: 'Acne Treatment',
-      before: '/assets/acne-before.jpg',
-      after: '/assets/acne-after.jpg',
+      before: '/public/bacne.png',
+      after: '/public/aacne.png',
       description: 'Effective solutions to reduce acne and prevent scarring.',
     },
     {
       condition: 'Pigmentation Treatment',
-      before: '/assets/pigmentation-before.jpg',
-      after: '/assets/pigmentation-after.jpg',
+      before: '/public/bpigmentation.png',
+      after: '/public/apigmentation.png',
       description: 'Reduce pigmentation and achieve an even skin tone.',
     },
     {
       condition: 'Eczema Treatment',
-      before: '/assets/eczema-before.jpg',
-      after: '/assets/eczema-after.jpg',
+      before: '/public/beczema.png',
+      after: '/public/aeczema.png',
       description: 'Personalized care to soothe eczema and restore skin health.',
     },
     {
       condition: 'Psoriasis Treatment',
-      before: '/assets/psoriasis-before.jpg',
-      after: '/assets/psoriasis-after.jpg',
+      before: '/public/bpsoriasis.png',
+      after: '/public/apsoriasis.png',
       description: 'Targeted treatments to manage psoriasis and improve skin texture.',
     },
   ];
