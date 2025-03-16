@@ -4,18 +4,19 @@ import './STDTreatmentGallery.css'; // Import the CSS file
 
 const STDTreatmentGallery = () => {
   const treatments = [
- 
     {
       condition: 'Hair Fall Treatment',
       before: '/public/bhairfall.png',
       after: '/public/ahairfall.png',
       description: 'Effective solutions to reduce hair fall and promote healthy hair growth.',
+      className: 'hairfall',
     },
     {
       condition: 'PRP Therapy',
       before: '/public/bprp.png',
       after: '/public/aprp.png',
       description: 'Platelet-rich plasma therapy for hair regrowth and skin rejuvenation.',
+     
     },
     {
       condition: 'Hair Transplant',
@@ -43,7 +44,9 @@ const STDTreatmentGallery = () => {
           </div>
         ))}
       </div>
+     
     </div>
+  
   );
 };
 

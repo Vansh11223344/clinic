@@ -15,6 +15,7 @@ const DrProfile = () => {
         </div>
         <Link to="/" className="home-button">Home</Link>
       </header>
+     
 
       {/* Main Content Section */}
       <div className="profile-content">
@@ -43,7 +44,7 @@ const DrProfile = () => {
         <div className="right-column">
         <div className="profile-image">
             <img 
-              src="/src/assets/example.png" // Replace with actual image URL or local import
+              src="/public/Dr.jpeg" // Replace with actual image URL or local import
               alt="Dr. A K" 
             />
           </div>
@@ -87,8 +88,13 @@ const DrProfile = () => {
         </Link>
             <p>Consultation Fee: ₹ at clinic</p>
           </div>
+         
         </div>
+       
       </div>
+      <footer className="footer">
+        <p>&copy; 2025 Dr. Khurana's Skin & Laser Clinic. All rights reserved.</p>
+      </footer>
     </div>
   );
 };

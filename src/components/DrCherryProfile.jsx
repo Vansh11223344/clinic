@@ -24,7 +24,7 @@ const DrCherryProfile = () => {
           {/* Profile Image */}
           <div className="profile-image">
             <img 
-              src="/src/assets/example.png" // Replace with actual image URL or local import
+              src="/public/DrCherry.jpeg" // Replace with actual image URL or local import
               alt="Dr. Cherry Khurana" 
             />
           </div>
@@ -74,6 +74,9 @@ const DrCherryProfile = () => {
           </div>
         </div>
       </div>
+      <footer className="footer">
+        <p>&copy; 2025 Dr. Khurana's Skin & Laser Clinic. All rights reserved.</p>
+      </footer>
     </div>
   );
 };

@@ -11,12 +11,14 @@
     color: #333;
     line-height: 1.6;
   }
-  
+
   .dr-cherry-profile {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
-  }
+    background-color: #afe6be;
+}
+
   
   /* Header Styles */
   .profile-header {
@@ -85,7 +87,7 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.121);
   }
   
   .doctor-info h2 {
@@ -157,5 +159,3 @@
       width: 100%;
     }
   }
-
-

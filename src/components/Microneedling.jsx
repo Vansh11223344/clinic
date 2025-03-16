@@ -37,7 +37,7 @@ const Microneedling = () => {
        <nav className="navbar">
               <Link to="/" className="home-link">Home</Link>
             </nav>
-            <h2>Treatment ofMicroneedling</h2>
+            <h2>Treatment of Microneedling</h2>
       <div className="conditions-grid">
         {conditions.map((condition, index) => (
           <div

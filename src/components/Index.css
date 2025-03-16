@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #afe6be;
   }
   
   /* Header Styles */
@@ -59,15 +60,7 @@
   }
   
   /* Hero Section Styles */
-  .hero {
-    background: url('https://via.placeholder.com/1500') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-  }
+ 
   
   .hero-content h2 {
     font-size: 36px;
@@ -276,7 +269,7 @@
   }
 
   .hero {
-    background-image: url('/public/poster.png'); 
+    background-image: url('/public/poster.webp'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -287,7 +280,7 @@
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.747);
+    background-color: rgba(0, 0, 0, 0.824);
     padding: 30px;
     border-radius: 10px;
     text-align: center;
