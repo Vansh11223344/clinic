@@ -15,8 +15,7 @@ const DrProfile = () => {
         </div>
         <Link to="/" className="home-button">Home</Link>
       </header>
-     
-
+      
       {/* Main Content Section */}
       <div className="profile-content">
       
