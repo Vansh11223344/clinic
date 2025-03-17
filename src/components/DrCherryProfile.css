@@ -153,9 +153,28 @@
     .profile-content {
       flex-direction: column;
     }
+
+    .profile-image img {
+      width: 30vw;       /* Makes image larger for smaller screens */
+      max-width: 80px;   /* Prevents the image from being too large */
+  }
   
     .left-column,
     .right-column {
-      width: 100%;
+      width: 80%;
     }
   }
+/* Profile Image Wrapper */
+.profile-image {
+  display: flex;
+  justify-content: center;
+}
+
+/* Profile Image */
+.profile-image img {
+  width: 20vw;          /* Makes image size responsive based on viewport width */
+  max-width: 120px;      /* Sets a maximum width for larger screens */
+  height: auto;          /* Maintains aspect ratio */
+  border-radius: 50%;
+  margin-bottom: 20px;
+}

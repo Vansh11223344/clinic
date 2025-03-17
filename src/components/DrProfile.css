@@ -182,17 +182,16 @@
     display: flex;
     flex-direction: column; /* Stack left section below right section */
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   
   /* Profile Image */
   .profile-image img {
-    width: 20vw; /* Make the image size responsive based on viewport width */
-    max-width: 150px; /* Set a maximum width for larger screens */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    margin-bottom: 70px;
-}
+    margin-bottom: 20px;
+  }
   
   /* Right Column */
   .right-column {
@@ -228,11 +227,7 @@
     .profile-content {
       flex-direction: column; /* Keeps left section below right section */
     }
-    .profile-image img {
-      width: 10vw; /* Slightly larger image on smaller screens */
-      max-width: 100px;
-      margin-bottom: 60px;
-  }
+   
   }
    /* Footer Styles */
    .footer {
