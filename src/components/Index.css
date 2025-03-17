@@ -149,22 +149,22 @@
   
   .about-content {
     background-color: #16a085;
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     flex-wrap: wrap;
   }
   
   .doctor {
     background-color: skyblue;
     padding: 20px;
-    margin: 10px;
+    margin: 10px 5px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 45%;
-    min-width: 300px;
+    width: 90%;
+    max-width: 500px;
   }
   
   .doctor h3 {
