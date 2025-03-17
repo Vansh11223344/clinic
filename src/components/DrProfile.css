@@ -198,11 +198,12 @@
   
   /* Profile Image */
   .profile-image img {
-    width: 100px;
-    height: 100px;
+    width: 20vw; /* Make the image size responsive based on viewport width */
+    max-width: 200px; /* Set a maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 50%;
     margin-bottom: 20px;
-  }
+}
   
   /* Right Column */
   .right-column {
@@ -238,6 +239,10 @@
     .profile-content {
       flex-direction: column; /* Keeps left section below right section */
     }
+    .profile-image img {
+      width: 30vw; /* Slightly larger image on smaller screens */
+      max-width: 120px;
+  }
   }
    /* Footer Styles */
    .footer {
