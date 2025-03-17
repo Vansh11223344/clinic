@@ -156,7 +156,7 @@
 
     .profile-image img {
       width: 30vw;       /* Makes image larger for smaller screens */
-      max-width: 80px;   /* Prevents the image from being too large */
+      max-width: 100px;   /* Prevents the image from being too large */
   }
   
     .left-column,
@@ -168,8 +168,8 @@
 .profile-image {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
-
 /* Profile Image */
 .profile-image img {
   width: 20vw;          /* Makes image size responsive based on viewport width */
