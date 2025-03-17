@@ -191,7 +191,7 @@
     max-width: 150px; /* Set a maximum width for larger screens */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
   
   /* Right Column */
@@ -231,6 +231,7 @@
     .profile-image img {
       width: 10vw; /* Slightly larger image on smaller screens */
       max-width: 100px;
+      margin-bottom: 60px;
   }
   }
    /* Footer Styles */
