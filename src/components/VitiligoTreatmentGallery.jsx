@@ -7,26 +7,26 @@ const VitiligoTreatmentGallery = () => {
    
     {
       condition: 'Acne Treatment',
-      before: '/public/bacne.png',
-      after: '/public/aacne.png',
+      before: '/images/bacne.png',
+      after: '/images/aacne.png',
       description: 'Effective solutions to reduce acne and prevent scarring.',
     },
     {
       condition: 'Pigmentation Treatment',
-      before: '/public/bpigmentation.png',
-      after: '/public/apigmentation.png',
+      before: '/images/bpigmentation.png',
+      after: '/images/apigmentation.png',
       description: 'Reduce pigmentation and achieve an even skin tone.',
     },
     {
       condition: 'Eczema Treatment',
-      before: '/public/beczema.png',
-      after: '/public/aeczema.png',
+      before: '/images/beczema.png',
+      after: '/images/aeczema.png',
       description: 'Personalized care to soothe eczema and restore skin health.',
     },
     {
       condition: 'Psoriasis Treatment',
-      before: '/public/bpsoriasis.png',
-      after: '/public/apsoriasis.png',
+      before: '/images/bpsoriasis.png',
+      after: '/images/apsoriasis.png',
       description: 'Targeted treatments to manage psoriasis and improve skin texture.',
     },
   ];

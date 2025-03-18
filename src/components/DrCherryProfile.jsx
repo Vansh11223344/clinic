@@ -24,7 +24,7 @@ const DrCherryProfile = () => {
           {/* Profile Image */}
           <div className="profile-image">
             <img 
-              src="/public/DrCherry.jpeg" // Replace with actual image URL or local import
+              src="/images/DrCherry.jpeg" // Replace with actual image URL or local import
               alt="Dr. Cherry Khurana" 
             />
           </div>

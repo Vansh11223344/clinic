@@ -43,7 +43,7 @@ const DrProfile = () => {
         <div className="right-column">
         <div className="profile-image">
             <img 
-              src="/public/Dr.jpeg" // Replace with actual image URL or local import
+              src="/images/Dr.jpeg" // Replace with actual image URL or local import
               alt="Dr. A K" 
             />
           </div>

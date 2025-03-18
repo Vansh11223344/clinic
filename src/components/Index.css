@@ -269,7 +269,7 @@
   }
 
   .hero {
-    background-image: url('/public/poster.webp'); 
+    background-image: url('/images/poster.webp'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

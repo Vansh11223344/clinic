@@ -6,26 +6,26 @@ const AestheticTreatmentGallery = () => {
   const treatments = [
     {
       condition: 'Radio Frequency Surgery',
-      before: '/public/bradio.png',
-      after: '/public/aradio.png',
+      before: '/images/bradio.png',
+      after: '/images/aradio.png',
       description: 'Non-invasive skin tightening and rejuvenation using radio frequency technology.',
     },
     {
       condition: 'Botox',
-      before: '/public/bbotax.png',
-      after: '/public/abotax.png',
+      before: '/images/bbotax.png',
+      after: '/images/abotax.png',
       description: 'Reduce wrinkles and fine lines with safe and effective Botox treatments.',
     },
     {
       condition: 'Fillers',
-      before: '/public/bfiller.png',
-      after: '/public/afiller.png',
+      before: '/images/bfiller.png',
+      after: '/images/afiller.png',
       description: 'Restore volume and enhance facial contours with dermal fillers.',
     },
     {
       condition: 'Chemical Peels',
-      before: '/public/bpigmentation.png',
-      after: '/public/apigmentation.png',
+      before: '/images/bpigmentation.png',
+      after: '/images/apigmentation.png',
       description: 'Improve skin texture and tone with customized chemical peel treatments.',
     },
   ];

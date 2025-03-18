@@ -6,14 +6,14 @@ const TreatmentGallery = () => {
   const treatments = [
     {
       condition: 'Acne',
-      before: '/public/bacne.png',
-      after: '/public/aacne.png',
+      before: '/images/bacne.png',
+      after: '/images/aacne.png',
       description: 'Effective treatment for acne, reducing inflammation and preventing scarring.',
     },
     {
       condition: 'Pigmentation',
-      before: '/public/bpigmentation.png',
-      after: '/public/apigmentation.png',
+      before: '/images/bpigmentation.png',
+      after: '/images/apigmentation.png',
       description: 'Advanced laser treatments to reduce pigmentation and even out skin tone.',
     },
   ];

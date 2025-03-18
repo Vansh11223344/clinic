@@ -6,22 +6,22 @@ const STDTreatmentGallery = () => {
   const treatments = [
     {
       condition: 'Hair Fall Treatment',
-      before: '/public/bhairfall.png',
-      after: '/public/ahairfall.png',
+      before: '/images/bhairfall.png',
+      after: '/images/ahairfall.png',
       description: 'Effective solutions to reduce hair fall and promote healthy hair growth.',
       className: 'hairfall',
     },
     {
       condition: 'PRP Therapy',
-      before: '/public/bprp.png',
-      after: '/public/aprp.png',
+      before: '/images/bprp.png',
+      after: '/images/aprp.png',
       description: 'Platelet-rich plasma therapy for hair regrowth and skin rejuvenation.',
      
     },
     {
       condition: 'Hair Transplant',
-      before: '/public/btransplant.png',
-      after: '/public/atransplant.png',
+      before: '/images/btransplant.png',
+      after: '/images/atransplant.png',
       description: 'Advanced hair transplant techniques for natural-looking results.',
     },
   ];
