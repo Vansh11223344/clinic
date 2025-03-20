@@ -56,7 +56,7 @@ const Index = () => {
 <Link to="/stdtreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
     <h3>Treatment of STD's and Hair </h3>
-    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+    <p>Hair Fall, PRP, Hair Transplant.</p>
   </div>
 </Link>
 
