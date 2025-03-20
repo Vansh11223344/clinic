@@ -61,7 +61,7 @@ const ContactForm = () => {
   return (
     <div className="contact-form-container">
       <header>
-        <Link to="/" className="home-link">Back to Home</Link>
+        <Link to="/" className="home-link">Home</Link>
       </header>
       <h2>Contact Us</h2>
       {submitted ? (

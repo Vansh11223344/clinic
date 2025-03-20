@@ -124,7 +124,7 @@
   
   .card p {
     font-size: 14px;
-    color: #666;
+    color: #2f2d2d;
   }
   
   .card:hover {
@@ -160,7 +160,7 @@
   .doctor {
     background-color: skyblue;
     padding: 20px;
-    margin: 10px 5px;
+    margin: 10px 8px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;

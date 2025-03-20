@@ -123,7 +123,7 @@ const Index = () => {
     <p>MBBS, M.D. - Dermatologist, Trichologist, and Venereologist</p>
   </div>
 </Link>
-<Link to="/drcherryprofile" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="/drcherryprofile" style={{ textDecoration: "none", color: "black" }}>
   <div className="doctor">
     <h3>Dr. Cherry Khurana</h3>
     <p>MBBS (Aesthetics and Laser)</p>
