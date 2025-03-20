@@ -63,7 +63,7 @@ const Index = () => {
 <Link to="/aesthetictreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
     <h3>Radio Frequency Surgery</h3>
-    <p>Botox, Fillers, Chemical Peels, and more.</p>
+    <p>Botox, Fillers, Chemical Peels.</p>
   </div>
 </Link>
 
