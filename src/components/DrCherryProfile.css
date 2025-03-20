@@ -21,8 +21,12 @@ body {
 
 /* Header Styles */
 .profile-header {
-  text-align: center;
-  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .profile-header h1 {
@@ -39,16 +43,23 @@ body {
 /* Main Content Styles */
 .profile-content {
   display: flex;
+  flex-direction: column; /* Stack left section below right section */
   gap: 40px;
 }
 
-.left-column {
-  flex: 2;
-}
-
-.right-column {
-  flex: 1;
-}
+  /* Right Column */
+  .right-column {
+    background-color: #ddecfa;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Left Column */
+  .left-column {
+    background-color: #ddedfc;
+    padding: 15px;
+    border-radius: 10px;
+  }
 
 /* Clinic Info Styles */
 .clinic-info {
@@ -132,10 +143,11 @@ body {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
   margin-bottom: 10px;
+  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
