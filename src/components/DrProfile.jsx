@@ -19,26 +19,6 @@ const DrProfile = () => {
       {/* Main Content Section */}
       <div className="profile-content">
       
-        {/* Left Column */}
-        <div className="left-column">
-          <div className="personal-statement">
-            <h2>Personal Statement</h2>
-            <p>
-              My favorite part of being a doctor is the opportunity to directly improve the health and wellbeing of my patients and to develop professional and personal relationships with them.
-            </p>
-          </div>
-
-          <div className="about-dr">
-            <h2>More About Dr. A K</h2>
-            <p>
-              Dr. Aashish Khurana is one of the best Dermatologists in Janakpuri, Delhi. He has helped numerous patients in his 28 years of experience as a Dermatologist. He has completed <strong>MBBS, MD DERMATOLOGY</strong>. You can consult Dr. A K at Khurana's Skin Clinic in Janakpuri, Delhi. Book an appointment online with Dr. Aashish Khurana.
-            </p>
-            <p>
-            Khurana's Skin Clinic & Laser Centre is a leading dermatology and aesthetics clinic that emphasizes personalized treatment plans, state-of-the-art technology, and holistic care. We provide treatments for all problems related to skin, hair, and nails. All cosmetic procedures are performed using advanced lasers and the latest technology
-            </p>
-          </div>
-        </div>
-
         {/* Right Column */}
         <div className="right-column">
         <div className="profile-image">
@@ -91,6 +71,27 @@ const DrProfile = () => {
         </div>
        
       </div>
+
+       {/* Left Column */}
+       <div className="left-column">
+          <div className="personal-statement">
+            <h2>Personal Statement</h2>
+            <p>
+              My favorite part of being a doctor is the opportunity to directly improve the health and wellbeing of my patients and to develop professional and personal relationships with them.
+            </p>
+          </div>
+
+          <div className="about-dr">
+            <h2>More About Dr. A K</h2>
+            <p>
+              Dr. Aashish Khurana is one of the best Dermatologists in Janakpuri, Delhi. He has helped numerous patients in his 28 years of experience as a Dermatologist. He has completed <strong>MBBS, MD DERMATOLOGY</strong>. You can consult Dr. A K at Khurana's Skin Clinic in Janakpuri, Delhi. Book an appointment online with Dr. Aashish Khurana.
+            </p>
+            <p>
+            Khurana's Skin Clinic & Laser Centre is a leading dermatology and aesthetics clinic that emphasizes personalized treatment plans, state-of-the-art technology, and holistic care. We provide treatments for all problems related to skin, hair, and nails. All cosmetic procedures are performed using advanced lasers and the latest technology
+            </p>
+          </div>
+        </div>
+
       </div>
   );
 };

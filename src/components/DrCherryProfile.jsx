@@ -18,24 +18,7 @@ const DrCherryProfile = () => {
 
       {/* Main Content Section */}
       <div className="profile-content">
-        
-             {/* Left Column */}
-             <div className="left-column">
-          <div className="clinic-info">
-            <h2>About Khurana's Skin Clinic & Laser Centre</h2>
-            <p>
-              Khurana's Skin Clinic & Laser Centre is a leading dermatology and aesthetics clinic that emphasizes personalized treatment plans, state-of-the-art technology, and holistic care. We provide treatments for all problems related to skin, hair, and nails. All cosmetic procedures are performed using advanced lasers and the latest technology.
-            </p>
-          </div>
 
-          <div className="about-dr">
-            <h2>About Dr. Cherry Khurana</h2>
-            <p>
-              Dr. Cherry Khurana is an MBBS with expertise in Aesthetics and Laser treatments. She is dedicated to providing personalized care and achieving the best results for her patients. With her extensive knowledge and experience, Dr. Cherry ensures that every patient receives the highest standard of treatment.
-            </p>
-          </div>
-        </div>
-        
         {/* Right Column */}
         <div className="right-column">
           {/* Profile Image */}
@@ -74,6 +57,22 @@ const DrCherryProfile = () => {
           </div>
         </div>
 
+             {/* Left Column */}
+             <div className="left-column">
+          <div className="clinic-info">
+            <h2>About Khurana's Skin Clinic & Laser Centre</h2>
+            <p>
+              Khurana's Skin Clinic & Laser Centre is a leading dermatology and aesthetics clinic that emphasizes personalized treatment plans, state-of-the-art technology, and holistic care. We provide treatments for all problems related to skin, hair, and nails. All cosmetic procedures are performed using advanced lasers and the latest technology.
+            </p>
+          </div>
+
+          <div className="about-dr">
+            <h2>About Dr. Cherry Khurana</h2>
+            <p>
+              Dr. Cherry Khurana is an MBBS with expertise in Aesthetics and Laser treatments. She is dedicated to providing personalized care and achieving the best results for her patients. With her extensive knowledge and experience, Dr. Cherry ensures that every patient receives the highest standard of treatment.
+            </p>
+          </div>
+        </div>
       </div>
       
     </div>
