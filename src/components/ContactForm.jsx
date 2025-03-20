@@ -61,7 +61,13 @@ const ContactForm = () => {
   return (
     <div className="contact-form-container">
       <header>
-        <Link to="/" className="home-link">Home</Link>
+      <Link 
+  to="/" 
+  style={{ backgroundColor: 'blue', color: 'white', padding: '7px 18px', borderRadius: '5px', textDecoration: 'none' }}
+>
+  Home
+</Link>
+
       </header>
       <h2>Contact Us</h2>
       {submitted ? (

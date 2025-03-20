@@ -38,23 +38,24 @@ const Index = () => {
       <section id="services" className="services">
         <h2>Our Services</h2>
         <div className="service-cards">
-        <Link to="/treatmentgallery" style={{ textDecoration: "none", color: "black" }}>
+
+<Link to="/treatmentgallery" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
-    <h3>Treatment of Skin, Hair and Nail Diseases</h3>
-    <p>Acne, Pigmentation, Eczema, Psoriasis, and more.</p>
+    <h3>Treatment of Skin and Nail Diseases</h3>
+    <p>Acne, Pigmentation, Eczema, Psoriasis and more</p>
   </div>
 </Link>
 
 <Link to="/lasertreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
     <h3>Laser Hair Treatments</h3>
-    <p>Hair Removal, Skin Resurfacing, Tattoo Removal, and more.</p>
+    <p>Hair Removal, Skin Resurfacing, Tattoo Removal.</p>
   </div>
 </Link>
 
 <Link to="/stdtreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
-    <h3>Treatment of STD's</h3>
+    <h3>Treatment of STD's and Hair </h3>
     <p>Hair Fall, PRP, Hair Transplant, and more.</p>
   </div>
 </Link>
@@ -68,49 +69,19 @@ const Index = () => {
 
 <Link to="/vitiligotreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
           <div className="card">
-            <h3>Treatment of Vitiligo</h3>
-            <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-          </div>
-          </Link>
-
-{/*<Link to="/qswitchndyaggallery" style={{ textDecoration: "none", color: "black" }}>
-  <div className="card">
-    <h3>Q Switch ND YAG Laser</h3>
-    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-  </div>
-</Link>*/}
+     <h3>Treatment of Vitiligo</h3>
+     <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+   </div>
+</Link>
 
 <Link to="/ipltreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
-    <h3>Intense Pulse Light</h3>
-    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-  </div>
+     <h3>Intense Pulse Light</h3>
+     <p>Hair Fall, PRP, Hair Transplant, and more.</p>
+   </div>
 </Link>
 
-
-{/*}
-<Link to="/chemicalpeels" style={{ textDecoration: "none", color: "black" }}>
-  <div className="card">
-    <h3>Chemical Peels</h3>
-    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-  </div>
-</Link>
-
-<Link to="/microneedling" style={{ textDecoration: "none", color: "black" }}>
-  <div className="card">
-    <h3>Microneedling</h3>
-    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-  </div>
-</Link>
-
-<Link to="/pbt" style={{ textDecoration: "none", color: "black" }}>
-  <div className="card">
-    <h3>Profhilo, Botox & TPRP</h3>
-    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
-  </div>
-</Link>*/}
-
-        </div>
+     </div>
       </section>
 
       {/* About Us Section */}
@@ -118,18 +89,18 @@ const Index = () => {
         <h2>About Us</h2>
         <div className="about-content">
         <Link to="/drprofile" style={{ textDecoration: "none", color: "black" }}>
-  <div className="doctor">
+  <div className="doctor1">
     <h3>Dr. Aashish Khurana</h3>
     <p>MBBS, M.D. - Dermatologist, Trichologist, and Venereologist</p>
   </div>
 </Link>
         <Link to="/drcherryprofile" style={{ textDecoration: "none", color: "black" }}>
-  <div className="doctor">
+  <div className="doctor2">
     <h3>Dr. Cherry Khurana</h3>
     <p>MBBS (Aesthetics and Laser)</p>
   </div>
 </Link>
-</div>
+     </div>
       </section>
 
       {/* Contact Section */}

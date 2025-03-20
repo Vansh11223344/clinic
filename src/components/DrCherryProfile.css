@@ -151,10 +151,11 @@ body {
 @media (max-width: 768px) {
   .profile-content {
     flex-direction: column;
+    margin:auto;
   }
 
   .left-column,
   .right-column {
-    width: 80%;
+    width: 100%;
   }
 }  

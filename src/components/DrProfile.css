@@ -222,13 +222,18 @@
     background-color: darkgreen;
   }
   
-  /* Adjust layout for larger screens */
-  @media (min-width: 768px) {
-    .profile-content {
-      flex-direction: column; /* Keeps left section below right section */
-    }
-   
+ /* Responsive Design */
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    margin:auto;
   }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+}  
    /* Footer Styles */
    .footer {
     background-color: #2c3e50;

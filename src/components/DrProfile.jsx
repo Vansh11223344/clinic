@@ -91,10 +91,7 @@ const DrProfile = () => {
         </div>
        
       </div>
-      <footer className="footer">
-        <p>&copy; 2025 Dr. Khurana's Skin & Laser Clinic. All rights reserved.</p>
-      </footer>
-    </div>
+      </div>
   );
 };
 

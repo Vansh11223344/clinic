@@ -101,29 +101,30 @@
   
   .service-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center the cards */
     flex-wrap: wrap;
-  }
+    }
+
   
-  .card {
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 22%;
-    min-width: 200px;
-    box-shadow: 0 0 10px rgba(8, 227, 172, 0.637);
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: #16a085;
-  }
+.card {
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 22%;
+  min-width: 200px;
+  box-shadow: 0 0 10px rgba(8, 227, 172, 0.637);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #16a085;
+  justify-content: center;
+} 
   
   .card h3 {
     font-size: 20px;
-    margin-bottom: 10px;
   }
   
   .card p {
-    font-size: 14px;
+    font-size: 19px;
     color: #2f2d2d;
   }
   
@@ -157,32 +158,36 @@
     flex-wrap: wrap;
   }
   
-  .doctor {
+  .doctor1 {
     background-color: skyblue;
     padding: 20px;
-    margin: 10px 8px;
+    margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    width: 70%;
+    max-width: 500px;
+  }
+  .doctor2 {
+    background-color: skyblue;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
     max-width: 500px;
   }
   
-  .doctor h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .doctor p {
-    font-size: 14px;
-    color: #666;
-  }
-
-  .doctor:hover {
+  .doctor1:hover {
     color: darkblue; /* Changes text color to dark blue */
     background-color: #f0f0f0; /* Optional: Light gray background on hover */
     cursor: pointer;
   }
   
+  .doctor2:hover {
+    color: darkblue; /* Changes text color to dark blue */
+    background-color: #f0f0f0; /* Optional: Light gray background on hover */
+    cursor: pointer;
+  }
   /* Contact Section Styles */
   .contact {
     padding: 40px 20px;
