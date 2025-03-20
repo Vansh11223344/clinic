@@ -42,7 +42,7 @@ const Index = () => {
 <Link to="/treatmentgallery" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
     <h3>Treatment of Skin and Nail Diseases</h3>
-    <p>Acne, Pigmentation, Eczema, Psoriasis and more</p>
+    <p>Acne, Pigmentation, Eczema, Psoriasis.</p>
   </div>
 </Link>
 
@@ -56,7 +56,7 @@ const Index = () => {
 <Link to="/stdtreatmentgallery" style={{ textDecoration: "none", color: "black" }}>
   <div className="card">
     <h3>Treatment of STD's and Hair </h3>
-    <p>Hair Fall, PRP, Hair Transplant.</p>
+    <p>Hair Fall, PRP, Hair Transplant, and more.</p>
   </div>
 </Link>
 
