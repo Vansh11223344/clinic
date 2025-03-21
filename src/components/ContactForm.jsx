@@ -32,13 +32,13 @@ const ContactForm = () => {
 
     setError(null);
 
-    const serviceID = 'service_nemnvdp';
-    const templateID = 'template_24frk1a';
-    const userID = 'wa7lu9PVLioBjqoC7';
+    const serviceID = 'service_wmabeqm';
+    const templateID = 'template_p4f6fkp';
+    const userID = 'o9lFZn7YhCkkM7uQg';
 
     const emailParams = {
       ...formData,
-      to_email: 'guptavansh@gmail.com',
+      to_email: 'khuranaskin45@gmail.com',
     };
 
     emailjs.send(serviceID, templateID, emailParams, userID)
