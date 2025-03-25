@@ -8,23 +8,20 @@ const DrProfile = () => {
       {/* Header Section */}
       <header className="profile-header">
         <div className="header-content">
-          <div>
-            <h1>Dr. Aashish Khurana</h1>
-            <p>Dermatologist | 28 Years of Experience</p>
-          </div>
+          <h1>Dr. Aashish Khurana</h1>
+          <p>Dermatologist | 28 Years of Experience</p>
         </div>
-        <Link to="/" className="home-button">Home</Link>
+        <Link to="/" className="home-button">Back to Home</Link>
       </header>
-      
+
       {/* Main Content Section */}
       <div className="profile-content">
-      
-        {/* Right Column */}
+        {/* Right Column (Image and Info) */}
         <div className="right-column">
-        <div className="profile-image">
+          <div className="profile-image">
             <img 
-              src="/images/Dr.jpeg" // Replace with actual image URL or local import
-              alt="Dr. A K" 
+              src="/images/Dr.jpeg" // Ensure this path is correct in your public folder
+              alt="Dr. Aashish Khurana" 
             />
           </div>
           <div className="doctor-info">
@@ -35,13 +32,13 @@ const DrProfile = () => {
             </div>
             <div className="info-section">
               <h3>Other Treatment Areas</h3>
-              <p>Dermatologist/ Cosmetologist</p>
+              <p>Dermatologist / Cosmetologist</p>
             </div>
             <div className="info-section">
               <h3>Education</h3>
               <ul>
                 <li><strong>MBBS</strong> - KIMS HUBLI, 1997</li>
-                <li><strong>MD DERMATOLOGY</strong> - M.R MEDICAL COLLEGE, 2002</li>
+                <li><strong>MD Dermatology</strong> - M.R Medical College, 2002</li>
               </ul>
             </div>
             <div className="info-section">
@@ -52,7 +49,7 @@ const DrProfile = () => {
               </ul>
             </div>
             <div className="info-section">
-              <h3>Professional Memberships</h3>
+              <h3>Professional Member</h3>
               <ul>
                 <li>Indian Association of Dermatologists Venereologists and Leprologists (IADVL)</li>
                 <li>AAAM</li>
@@ -62,18 +59,15 @@ const DrProfile = () => {
           </div>
 
           <div className="cta-section">
-          <Link to="/ContactForm">
-          <button className="cta-button">Book an Appointment</button>
-        </Link>
+            <Link to="/ContactForm">
+              <button className="cta-button">Book an Appointment</button>
+            </Link>
             <p>Consultation Fee: ₹ at clinic</p>
           </div>
-         
         </div>
-       
-      </div>
 
-       {/* Left Column */}
-       <div className="left-column">
+        {/* Left Column (Personal Statement and About) */}
+        <div className="left-column">
           <div className="personal-statement">
             <h2>Personal Statement</h2>
             <p>
@@ -82,17 +76,17 @@ const DrProfile = () => {
           </div>
 
           <div className="about-dr">
-            <h2>More About Dr. A K</h2>
+            <h2>About Dr. Aashish Khurana</h2>
             <p>
-              Dr. Aashish Khurana is one of the best Dermatologists in Janakpuri, Delhi. He has helped numerous patients in his 28 years of experience as a Dermatologist. He has completed <strong>MBBS, MD DERMATOLOGY</strong>. You can consult Dr. A K at Khurana's Skin Clinic in Janakpuri, Delhi. Book an appointment online with Dr. Aashish Khurana.
+              Dr. Aashish Khurana is a renowned dermatologist in Janakpuri, Delhi, with over 28 years of experience. He holds an <strong>MBBS</strong> from KIMS Hubli (1997) and an <strong>MD in Dermatology</strong> from M.R Medical College (2002). Patients can consult him at Khurana's Skin Clinic for expert care.
             </p>
             <p>
-            Khurana's Skin Clinic & Laser Centre is a leading dermatology and aesthetics clinic that emphasizes personalized treatment plans, state-of-the-art technology, and holistic care. We provide treatments for all problems related to skin, hair, and nails. All cosmetic procedures are performed using advanced lasers and the latest technology
+              Khurana's Skin Clinic & Laser Centre is a premier destination for dermatology and aesthetics, offering personalized treatment plans with cutting-edge technology. We specialize in skin, hair, and nail treatments, utilizing advanced lasers and modern techniques.
             </p>
           </div>
         </div>
-
       </div>
+    </div>
   );
 };
 

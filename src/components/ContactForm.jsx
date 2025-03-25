@@ -60,42 +60,48 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form-container">
-      <header>
-      <Link 
-  to="/" 
-  style={{ backgroundColor: 'blue', color: 'white', padding: '7px 18px', borderRadius: '5px', textDecoration: 'none' }}
->
-  Home
-</Link>
-
+      <header className="form-header">
+        <Link 
+          to="/" 
+          className="home-link"
+        >
+          Back to Home
+        </Link>
       </header>
-      <h2>Contact Us</h2>
+      <h2>Connect Digitally</h2>
+      <p className="form-subtitle">Reach out for expert skin care advice online.</p>
       {submitted ? (
-        <p className="success-message">Thank you for contacting us! We will get back to you soon.</p>
+        <div className="success-message">
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. Our team will respond to you shortly.</p>
+          <Link to="/" className="return-link">Return to Home</Link>
+        </div>
       ) : (
         <form onSubmit={handleSubmit} className="contact-form">
           {error && <p className="error-message">{error}</p>}
 
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Your Name</label>
             <input
               type="text"
               id="name"
               name="name"
               value={formData.name}
               onChange={handleChange}
+              placeholder="Enter your name"
               required
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email Address</label>
             <input
               type="email"
               id="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
+              placeholder="Enter your email"
               required
             />
           </div>
@@ -108,22 +114,24 @@ const ContactForm = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
+              placeholder="Enter your phone number"
               required
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Your Message</label>
             <textarea
               id="message"
               name="message"
               value={formData.message}
               onChange={handleChange}
+              placeholder="Tell us about your skin care needs"
               required
             />
           </div>
 
-          <button type="submit" className="submit-button">Send Message</button>
+          <button type="submit" className="submit-button">Submit Request</button>
         </form>
       )}
     </div>

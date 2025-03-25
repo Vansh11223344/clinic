@@ -16,8 +16,8 @@ const TreatmentGallery = () => {
       after: '/images/apigmentation.png',
       description: 'Advanced laser treatments to reduce pigmentation and even out skin tone.',
     },
-  ];
-    {/*{
+    // Uncomment and add more treatments as needed
+    /*{
       condition: 'Eczema',
       before: '/assets/eczema-before.jpg',
       after: '/assets/eczema-after.jpg',
@@ -28,15 +28,15 @@ const TreatmentGallery = () => {
       before: '/assets/psoriasis-before.jpg',
       after: '/assets/psoriasis-after.jpg',
       description: 'Targeted treatments to manage psoriasis and improve skin texture.',
-    },*/}
-  
+    },*/
+  ];
 
   return (
     <div className="treatment-gallery">
-          <nav className="navbar">
-                <Link to="/" className="home-link">Home</Link>
-              </nav>
-      <h2>Treatment of Skin, Hair, and Nail Diseases</h2>
+      <nav className="navbar">
+        <Link to="/" className="home-link">Back to Home</Link>
+      </nav>
+      <h2>Treatment of Skin, Hair, and Nail Conditions</h2>
       <div className="gallery-container">
         {treatments.map((treatment, index) => (
           <div key={index} className="treatment-card">
