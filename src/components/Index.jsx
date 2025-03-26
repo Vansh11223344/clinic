@@ -17,7 +17,7 @@ const Index = () => {
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><Link to="/consultation">Book Consultation</Link></li>
+            <li><Link to="/ContactForm">Book Consultation</Link></li>
           </ul>
         </nav>
       </header>
