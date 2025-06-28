@@ -1,287 +1,94 @@
-/* General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Playfair Display', serif; /* Consistent with previous designs */
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
 
 body {
-  background-color: #f0f4f8;
+  background-color: #F1E4E1;
   color: #2b2d42;
+  font-family: 'Lora', serif;
   line-height: 1.6;
 }
 
 .dr-cherry-profile {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background: linear-gradient(135deg, #e6f0fa 0%, #d1f2eb 100%); /* Soft gradient background */
   min-height: 100vh;
+  background: linear-gradient(135deg, #F1E4E1 0%, #f0f4f8 100%);
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
-/* Header Styles */
-.profile-header {
-  display: flex;
-  justify-content: space-between;
+/* Header full width */
+.dr-cherry-profile > div:first-child {
+  padding: 0 !important;
+}
+
+.profile-card {
+  background: #fff !important;
+  border-radius: 18px !important;
+  box-shadow: 0 6px 20px rgba(181,131,141,0.08) !important;
+  margin-bottom: 24px;
+  height: 100%;
+}
+
+.MuiCardContent-root {
+  padding: 24px !important;
+}
+
+/* Center all content inside .profile-card (doctor info) */
+.profile-card .MuiCardContent-root {
+  display: flex !important;
+  flex-direction: column;
   align-items: center;
-  background: linear-gradient(90deg, #2b2d42 0%, #4a4e69 100%);
-  padding: 20px 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
+  justify-content: center;
 }
 
-.header-content h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #fff; /* White text for visibility */
-  margin-bottom: 5px;
-}
-
-.header-content p {
-  font-size: 1.1rem;
-  color: #fff; /* White text for consistency */
-  font-family: 'Lora', serif;
-}
-
-.home-button {
-  background: #f4a261;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.home-button:hover {
-  background: #e76f51;
-  transform: translateY(-3px);
-}
-
-/* Profile Content Styles */
-.profile-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr; /* Right column narrower, left column wider */
-  gap: 30px;
-}
-
-/* Right Column (Image and Info) */
-.right-column {
-  background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-}
-
-.profile-image img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  display: block;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.doctor-info h2 {
-  font-size: 1.8rem;
-  color: #2b2d42;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.info-section {
-  margin-bottom: 20px;
-}
-
-.info-section h3 {
-  font-size: 1.2rem;
-  color: #f4a261;
-  margin-bottom: 10px;
-}
-
+/* Make info section text black */
+ul,
+ul li,
 .info-section p,
 .info-section ul {
-  font-size: 1rem;
-  color: #6b7280;
+  color: #000 !important;
   font-family: 'Lora', serif;
-}
-
-.info-section ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.info-section ul li {
-  margin-bottom: 8px;
-  position: relative;
-  padding-left: 20px;
-}
-
-.info-section ul li:before {
-  content: '•';
-  color: #f4a261;
-  position: absolute;
-  left: 0;
-}
-
-/* CTA Section */
-.cta-section {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.cta-button {
-  background: linear-gradient(90deg, #f4a261, #e76f51);
-  color: #fff;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 25px;
   font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(244, 162, 97, 0.4);
+ul {
+   margin: 0;
+  padding: 0 0 0 1.5rem; /* Increased padding for larger text */
 }
 
-.cta-section p {
-  font-size: 0.9rem;
-  color: #6b7280;
-  margin-top: 10px;
-  font-family: 'Lora', serif;
+ul li {
+  margin-bottom: 10px; /* Increased spacing */
+  font-size: 1.1rem;
+ }
+
+/* Increase text sizes in doctor info */
+.doctor-info-section .MuiTypography-subtitle1 {
+  font-size: 1.3rem !important;
 }
 
-/* Left Column (Clinic Info and About) */
-.left-column {
-  background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+.doctor-info-section ul li {
+  font-size: 1.2rem !important;
 }
 
-.clinic-info h2,
-.about-dr h2 {
-  font-size: 1.8rem;
-  color: #2b2d42;
-  margin-bottom: 15px;
-}
-
-.clinic-info p,
-.about-dr p {
-  font-size: 1rem;
-  color: #6b7280;
-  font-family: 'Lora', serif;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .profile-content {
-    grid-template-columns: 1fr 1.5fr; /* Adjust column ratio for tablets */
-  }
-
-  .profile-header {
-    padding: 15px 20px;
-  }
-
-  .header-content h1 {
-    font-size: 2rem;
-  }
-
-  .profile-image img {
-    max-width: 200px;
+@media (max-width: 900px) {
+  .MuiContainer-root {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
   }
 }
 
-@media (max-width: 768px) {
-  .profile-content {
-    grid-template-columns: 1fr; /* Stack columns on mobile */
-    gap: 20px;
-  }
-
-  .right-column,
-  .left-column {
-    width: 100%;
-  }
-
-  .profile-header {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .header-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .header-content p {
-    font-size: 1rem;
-  }
-
-  .home-button {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-  }
-
-  .profile-image img {
-    max-width: 180px;
-  }
-
-  .doctor-info h2,
-  .clinic-info h2,
-  .about-dr h2 {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .dr-cherry-profile {
-    padding: 15px;
+    padding: 0 !important;
   }
-
-  .profile-header {
-    padding: 10px 15px;
+  .profile-card {
+    margin-bottom: 18px !important;
   }
-
-  .header-content h1 {
-    font-size: 1.5rem;
+  .MuiCardContent-root {
+    padding: 16px !important;
   }
-
-  .header-content p {
-    font-size: 0.9rem;
-  }
-
-  .profile-image img {
-    max-width: 150px;
-  }
-
-  .doctor-info h2,
-  .clinic-info h2,
-  .about-dr h2 {
-    font-size: 1.4rem;
-  }
-
-  .info-section h3 {
-    font-size: 1.1rem;
-  }
-
-  .info-section p,
-  .info-section ul,
-  .clinic-info p,
-  .about-dr p {
-    font-size: 0.9rem;
-  }
-
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 1rem;
+  
+  /* Adjust image size on mobile */
+  .MuiCardMedia-root {
+    width: 180px !important;
+    height: 180px !important;
   }
 }

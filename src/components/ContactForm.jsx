@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import { TextField, Button, Typography, Box, Container, Alert } from '@mui/material';
+import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import './ContactForm.css';
-import { Link } from 'react-router-dom';
+
+const ACCENT = '#B5838D';
+const DARK_ACCENT = '#6D6875';
+const PRIMARY = '#F1E4E1';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -42,8 +47,7 @@ const ContactForm = () => {
     };
 
     emailjs.send(serviceID, templateID, emailParams, userID)
-      .then((response) => {
-        console.log('Email sent successfully!', response.text);
+      .then(() => {
         setSubmitted(true);
         setFormData({
           name: '',
@@ -52,89 +56,175 @@ const ContactForm = () => {
           message: '',
         });
       })
-      .catch((error) => {
-        console.error('Failed to send email:', error);
+      .catch(() => {
         setError('Failed to send message. Please try again.');
       });
   };
 
   return (
-    <div className="contact-form-container">
-      <header className="form-header">
-        <Link 
-          to="/" 
-          className="home-link"
-        >
-          Back to Home
+    <Container
+      maxWidth="sm"
+      className="contact-form-container"
+      sx={{
+        mt: 5,
+        mb: 5,
+        p: { xs: 2, sm: 4 },
+        boxShadow: 3,
+        borderRadius: 3,
+        background: `linear-gradient(135deg, ${PRIMARY} 0%, #f0f4f8 100%)`,
+        fontFamily: "'Lora', serif",
+      }}
+    >
+      <Box sx={{ mb: 4 }} className="form-header">
+        <Link to="/" className="home-link" style={{ textDecoration: 'none' }}>
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: ACCENT,
+              color: '#fff',
+              borderRadius: 25,
+              fontWeight: 600,
+              textTransform: 'none',
+              px: 3,
+              py: 1,
+              fontSize: '15px',
+              '&:hover': {
+                backgroundColor: DARK_ACCENT,
+              },
+              boxShadow: 'none',
+            }}
+          >
+            Back to Home
+          </Button>
         </Link>
-      </header>
-      <h2>Connect Digitally</h2>
-      <p className="form-subtitle">Reach out for expert skin care advice online.</p>
+      </Box>
+      <Typography variant="h4" align="center" gutterBottom sx={{
+        fontWeight: 700,
+        background: `linear-gradient(90deg, ${DARK_ACCENT}, ${ACCENT})`,
+        WebkitBackgroundClip: 'text',
+        backgroundClip: 'text',
+        color: 'transparent'
+      }}>
+        Connect Digitally
+      </Typography>
+      <Typography variant="subtitle1" align="center" gutterBottom className="form-subtitle">
+        Reach out for expert skin care advice online.
+      </Typography>
       {submitted ? (
-        <div className="success-message">
-          <h3>Message Sent!</h3>
-          <p>Thank you for reaching out. Our team will respond to you shortly.</p>
-          <Link to="/" className="return-link">Return to Home</Link>
-        </div>
+        <Box sx={{
+          textAlign: 'center',
+          p: 3,
+          background: '#f0f4f8',
+          borderRadius: 2
+        }} className="success-message">
+          <Typography variant="h5" sx={{ color: '#2b2d42', mb: 1 }}>
+            Message Sent!
+          </Typography>
+          <Typography variant="body1" sx={{
+            color: '#6b7280',
+            mb: 3,
+            fontFamily: "'Lora', serif"
+          }}>
+            Thank you for reaching out. Our team will respond to you shortly.
+          </Typography>
+          <Link to="/" className="return-link" style={{ textDecoration: 'none' }}>
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: ACCENT,
+                color: '#fff',
+                borderRadius: 25,
+                fontWeight: 600,
+                textTransform: 'none',
+                px: 3,
+                py: 1,
+                fontSize: '15px',
+                '&:hover': {
+                  backgroundColor: DARK_ACCENT,
+                },
+                boxShadow: 'none',
+              }}
+            >
+              Return to Home
+            </Button>
+          </Link>
+        </Box>
       ) : (
-        <form onSubmit={handleSubmit} className="contact-form">
-          {error && <p className="error-message">{error}</p>}
+        <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+          {error && <Alert severity="error" className="error-message">{error}</Alert>}
 
-          <div className="form-group">
-            <label htmlFor="name">Your Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter your name"
-              required
-            />
-          </div>
+          <TextField
+            label="Your Name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Enter your name"
+            required
+            fullWidth
+            InputProps={{ sx: { borderRadius: 2, background: '#fff' } }}
+          />
 
-          <div className="form-group">
-            <label htmlFor="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email"
-              required
-            />
-          </div>
+          <TextField
+            label="Email Address"
+            name="email"
+            type="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Enter your email"
+            required
+            fullWidth
+            InputProps={{ sx: { borderRadius: 2, background: '#fff' } }}
+          />
 
-          <div className="form-group">
-            <label htmlFor="phone">Phone Number</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder="Enter your phone number"
-              required
-            />
-          </div>
+          <TextField
+            label="Phone Number"
+            name="phone"
+            type="tel"
+            value={formData.phone}
+            onChange={handleChange}
+            placeholder="Enter your phone number"
+            required
+            fullWidth
+            InputProps={{ sx: { borderRadius: 2, background: '#fff' } }}
+          />
 
-          <div className="form-group">
-            <label htmlFor="message">Your Message</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Tell us about your skin care needs"
-              required
-            />
-          </div>
+          <TextField
+            label="Your Message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Tell us about your skin care needs"
+            required
+            multiline
+            minRows={4}
+            fullWidth
+            InputProps={{ sx: { borderRadius: 2, background: '#fff' } }}
+          />
 
-          <button type="submit" className="submit-button">Submit Request</button>
-        </form>
+          <Button
+            type="submit"
+            variant="contained"
+            className="submit-button"
+            sx={{
+              backgroundColor: ACCENT,
+              color: '#fff',
+              borderRadius: 25,
+              fontWeight: 600,
+              py: 1.5,
+              fontSize: '1.1rem',
+              textTransform: 'uppercase',
+              letterSpacing: 1,
+              boxShadow: 'none',
+              '&:hover': {
+                backgroundColor: DARK_ACCENT,
+              }
+            }}
+          >
+            Submit Request
+          </Button>
+        </Box>
       )}
-    </div>
+    </Container>
   );
 };
 

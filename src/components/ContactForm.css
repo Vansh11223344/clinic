@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
+
 /* General Styles */
 .contact-form-container {
+  font-family: 'Lora', serif;
   max-width: 700px;
   margin: 40px auto;
   padding: 30px;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+  background: linear-gradient(135deg, #F1E4E1 0%, #f0f4f8 100%);
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.5s ease-in-out;
@@ -17,29 +20,19 @@
 }
 
 .home-link {
-  background: linear-gradient(90deg, #2b2d42, #4a4e69);
-  color: #fff;
-  padding: 8px 20px;
-  border-radius: 25px;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.home-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
 
 /* Title and Subtitle */
-.contact-form-container h2 {
+.contact-form-container h2,
+.contact-form-container .MuiTypography-h4 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #2b2d42;
   text-align: center;
   margin-bottom: 10px;
-  background: linear-gradient(90deg, #2b2d42, #f4a261);
+  background: linear-gradient(90deg, #6D6875, #B5838D);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -53,72 +46,6 @@
   font-family: 'Lora', serif;
 }
 
-/* Form Styles */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group label {
-  font-size: 1rem;
-  color: #2b2d42;
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-  padding: 12px;
-  font-size: 1rem;
-  border: 2px solid #e0e6ed;
-  border-radius: 8px;
-  outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #f4a261;
-  box-shadow: 0 0 8px rgba(244, 162, 97, 0.3);
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: #a0aec0;
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-/* Submit Button Styles */
-.submit-button {
-  background: linear-gradient(90deg, #f4a261, #e76f51);
-  color: #fff;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.submit-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(244, 162, 97, 0.4);
-}
-
 /* Success Message Styles */
 .success-message {
   text-align: center;
@@ -127,13 +54,15 @@
   border-radius: 10px;
 }
 
-.success-message h3 {
+.success-message h3,
+.success-message h5 {
   font-size: 1.5rem;
   color: #2b2d42;
   margin-bottom: 10px;
 }
 
-.success-message p {
+.success-message p,
+.success-message .MuiTypography-body1 {
   font-size: 1.1rem;
   color: #6b7280;
   margin-bottom: 20px;
@@ -142,19 +71,7 @@
 
 .return-link {
   display: inline-block;
-  background: linear-gradient(90deg, #2b2d42, #4a4e69);
-  color: #fff;
-  padding: 8px 20px;
-  border-radius: 25px;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.return-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Error Message Styles */
@@ -185,7 +102,8 @@
     padding: 20px;
   }
 
-  .contact-form-container h2 {
+  .contact-form-container h2,
+  .contact-form-container .MuiTypography-h4 {
     font-size: 1.8rem;
   }
 
@@ -193,22 +111,13 @@
     font-size: 1rem;
   }
 
-  .form-group input,
-  .form-group textarea {
-    font-size: 0.9rem;
-    padding: 10px;
-  }
-
-  .submit-button {
-    font-size: 1rem;
-    padding: 10px 25px;
-  }
-
-  .success-message h3 {
+  .success-message h3,
+  .success-message h5 {
     font-size: 1.3rem;
   }
 
-  .success-message p {
+  .success-message p,
+  .success-message .MuiTypography-body1 {
     font-size: 1rem;
   }
 }
