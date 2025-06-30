@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { TextField, Button, Typography, Box, Container, Alert } from '@mui/material';
+import { TextField, Button, Typography, Box, Container, Alert, IconButton } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import './ContactForm.css';
@@ -76,28 +77,27 @@ const ContactForm = () => {
       }}
     >
       <Box sx={{ mb: 4 }} className="form-header">
-        <Link to="/" className="home-link" style={{ textDecoration: 'none' }}>
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: ACCENT,
-              color: '#fff',
-              borderRadius: 25,
-              fontWeight: 600,
-              textTransform: 'none',
-              px: 3,
-              py: 1,
-              fontSize: '15px',
-              '&:hover': {
-                backgroundColor: DARK_ACCENT,
-              },
-              boxShadow: 'none',
-            }}
-          >
-            Back to Home
-          </Button>
-        </Link>
-      </Box>
+  <Link to="/" className="home-link" style={{ textDecoration: 'none' }}>
+    <IconButton
+      sx={{
+        backgroundColor: ACCENT,
+        color: '#fff',
+        borderRadius: 25,
+        fontWeight: 600,
+        px: 2,
+        py: 1,
+        fontSize: '20px',
+        '&:hover': {
+          backgroundColor: DARK_ACCENT,
+        },
+        boxShadow: 'none',
+      }}
+      aria-label="Back to Home"
+    >
+      <HomeIcon />
+    </IconButton>
+  </Link>
+</Box>
       <Typography variant="h4" align="center" gutterBottom sx={{
         fontWeight: 700,
         background: `linear-gradient(90deg, ${DARK_ACCENT}, ${ACCENT})`,

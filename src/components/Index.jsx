@@ -202,10 +202,25 @@ const Index = () => {
               '&:hover': { background: DARK_ACCENT },
             }}
           >
-            Book Your Appointment
+            Book Consultation
           </Button>
         </Container>
       </Box>
+
+        {/* Dynamic Image Gallery Section */}
+      <section className="gallery-section">
+  <div className="gallery-grid">
+    <figure className="gallery-item">
+      
+        <img
+          src="images/image1.png"
+          alt="Our Service"
+          loading="lazy"
+            />
+         
+         </figure>
+      </div>
+   </section>
 
       {/* Services Section */}
       <Box sx={{ background: SECTION_BG, py: 8 }} id="services">
