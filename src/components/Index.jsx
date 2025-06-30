@@ -215,7 +215,6 @@ const Index = () => {
         <img
           src="images/image1.png"
           alt="Our Service"
-          loading="lazy"
             />
          
          </figure>
